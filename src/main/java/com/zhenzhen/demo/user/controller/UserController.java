@@ -3,8 +3,11 @@ package com.zhenzhen.demo.user.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.zhenzhen.demo.user.service.UserService;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -12,14 +15,13 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class UserController {
 	
+	@Autowired
+	private UserService userService;
+	
 	@RequestMapping("/getUser")
 	public Map<String,Object> getUser() {
-		log.info("I am in getUser");
-		 Map<String,Object> userMap = new HashMap<String,Object>();
-		 userMap.put("id", "1");
-		 userMap.put("name", "银真");
-		 userMap.put("age", "31");
-		 return userMap;
+		return userService.getUser();
+		
 	}
 	
 	@RequestMapping("/getUserPressLog")
