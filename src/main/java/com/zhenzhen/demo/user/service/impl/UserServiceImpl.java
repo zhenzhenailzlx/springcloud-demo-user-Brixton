@@ -5,14 +5,12 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.zhenzhen.demo.user.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService{
 
 	@Override
-	@SentinelResource(value = "getUserService")
 	public Map<String, Object> getUser() {
 		 Map<String,Object> userMap = new HashMap<String,Object>();
 		 userMap.put("id", "1");
