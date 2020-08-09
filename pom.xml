@@ -37,6 +37,13 @@
 		    <scope>provided</scope>
 		</dependency>
 		
+		<dependency>
+		    <groupId>redis.clients</groupId>
+		    <artifactId>jedis</artifactId>
+		    <version>2.9.0</version>
+		</dependency>
+		
+		
 
 	</dependencies>
 
@@ -58,6 +65,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				 <configuration>  
+                    <mainClass>com.zhenzhen.demo.user.UserApplication</mainClass>  
+                </configuration>  
 			</plugin>
 		</plugins>
 	</build>
