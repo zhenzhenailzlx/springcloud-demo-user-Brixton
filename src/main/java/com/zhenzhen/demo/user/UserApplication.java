@@ -1,4 +1,4 @@
-package com.zhenzhen.demo.order;
+package com.zhenzhen.demo.user;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
