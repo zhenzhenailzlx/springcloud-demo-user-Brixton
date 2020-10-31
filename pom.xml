@@ -10,9 +10,9 @@
 	</parent>
 	
 	<groupId>com.zhenzhen.demo</groupId>
-	<artifactId>springcloud-demo-admin-Brixton</artifactId>
+	<artifactId>springcloud-demo-user-Brixton</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springcloud-demo-admin-Brixton</name>
+	<name>springcloud-demo-user-Brixton</name>
 
 	<properties>
 		<java.version>1.8</java.version>
