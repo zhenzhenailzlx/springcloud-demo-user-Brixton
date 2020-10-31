@@ -29,6 +29,11 @@ public class UserController {
 	
 	@RequestMapping("/sleep")
 	public String sleep(String time) throws InterruptedException {
+
+		if("a".equals(time)){
+			throw new RuntimeException("异常降级测试");
+		}
+
 		int timeInt = 200;
 		if(StringUtils.isNotEmpty(time)) {
 			timeInt = Integer.parseInt(time);
